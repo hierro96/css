@@ -1,0 +1,102 @@
+/* Imagen utilizada en pantallas de anchura 480 px y superior */
+@media (min-width: 480px) and (max-width: 980px) {
+ .media-div{width:100%!important}
+}
+
+/* Imagen utilizada en pantallas de anchura 768 px y superior */
+@media (min-width: 981px) {
+  .media-div{width:50%!important}
+}
+
+/* Imagen utilizada en pantallas de anchura 1200 px y superior */
+@media (min-width: 1370px) {
+  .media-div{width:50%!important}
+}
+
+/*MENU USER E ICONS*/
+.user-button:hover #options-user {
+  display: block !important;
+  width: 14rem;
+  left: -9rem;
+  position: absolute;
+}
+
+.icons-button:hover #icons {
+ display: flex !important;
+ width: 6rem;
+ left: 0rem;
+ top: 100%;
+ position: absolute;
+}
+/***********FIM************/
+
+.brand_logo_container {
+  position: relative;
+  height: 170px;
+  width: 170px;
+  top: 4vh;
+  background:white;
+  z-index: 9;
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;  
+  animation: fade 400ms;
+  animation-delay: 200ms;
+  animation-fill-mode: backwards;
+}
+.brand_logo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+
+/*FORM LOGIN*/
+#formLogin {
+  top: 20vh;
+  border: none;
+  overflow: hidden;
+  animation: fade 400ms;
+  animation-delay: 100ms;
+}
+
+.form-group:nth-child(1) {
+  animation: move 600ms;
+}
+
+.form-group:nth-child(2) {
+  animation: move 500ms;
+  animation-delay: 200ms;
+  animation-fill-mode: backwards;
+}
+
+.btn-login {
+  animation: move 500ms;
+  animation-delay: 350ms;
+  animation-fill-mode: backwards;
+}
+
+
+@keyframes move {
+  from {
+    opacity: 0;
+    transform: translateX(-35%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/***********FIM************/
